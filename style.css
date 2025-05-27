@@ -1,0 +1,257 @@
+body {
+  background-color: #efe6dd;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background-color: #4b2e2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 600px) {
+  .formulario-contacto {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .producto {
+    width: 90%;
+  }
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #efe6dd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #b67b5b;
+}
+
+/* Estilos para las secciones */
+section {
+  padding: 50px 20px;
+}
+
+.inicio {
+  background-image: url("imagenes/fondo-cafe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Para que el texto resalte más */
+  text-align: center;
+  padding: 20px;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.producto {
+  background-color: #f7f1e1;
+  border: 1px solid #b67b5b;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto h3 {
+  margin: 10px 0 5px 0;
+}
+
+.producto p {
+  margin: 5px 0;
+}
+
+.producto button {
+  margin-top: 10px;
+  background-color: #4b2e2b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #b67b5b;
+}
+
+#productos h2 {
+  text-align: center;
+}
+.tituloContacto {
+  text-align: center;
+}
+/* Estilos formulario de contacto */
+.formulario-contacto {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f7f1e1;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.formulario-contacto button {
+  background-color: #4b2e2b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.formulario-contacto button:hover {
+  background-color: #b67b5b;
+}
+
+/* Reseñas con Grid */
+.tituloReseña {
+  text-align: center;
+}
+#reseñas {
+  background-color: #efe6dd;
+  padding: 50px 20px;
+}
+
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.reseña {
+  background-color: #f7f1e1;
+  border: 1px solid #b67b5b;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reseña h4 {
+  text-align: right;
+  margin-top: 10px;
+  color: #4b2e2b;
+}
+
+#sucursales {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#sucursales ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#sucursales li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.map-container {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #4b2e2b;
+  color: #efe6dd;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+  filter: invert(90%);
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}

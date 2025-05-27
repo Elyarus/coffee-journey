@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coffee Journey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/coffee-icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="imagenes/coffee-journey.png"Logo de Coffee Journey">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#recetas">Recetas</a></li>
+          <li><a href="#sucursales">Sucursales</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+      <h1>Bienvenido a Coffee Journey</h1>
+      <h3>El mejor café para acompañar tu viaje.</h3>
+    </section>
+
+    <section id="productos">
+      <h2>Nuestros Cafés</h2>
+
+      <div class="productos-container">
+        <div class="producto">
+          <img src="imagenes/cafe-nicaragua.jpg" alt="Café Espresso" />
+          <h3>Café Nicaragua</h3>
+          <p>Precio: $2000</p>
+          <button onclick="agregarAlCarrito('Café Espresso', 2000)">
+            Agregar al carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/cafe-colombia.jpg" alt="Café Colombia" />
+          <h3>Café Colombia</h3>
+          <p>Precio: $2500</p>
+          <button onclick="agregarAlCarrito('Café Colombia', 2500)">
+            Agregar al carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/cafe-etiopia.jpg" alt="Café Etiopía" />
+          <h3>Café Etiopía</h3>
+          <p>Precio: $3000</p>
+          <button onclick="agregarAlCarrito('Café Etiopía', 3000)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="reseñas">
+      <h2 class="tituloReseña">Reseña</h2>
+      <div class="grid-reseñas">
+        <div class="reseña">
+          <p>"El café de Colombia es increíble, muy recomendado!"</p>
+          <h4>- Ana</h4>
+        </div>
+        <div class="reseña">
+          <p>"Excelente atención y productos de calidad."</p>
+          <h4>- Pablo</h4>
+        </div>
+        <div class="reseña">
+          <p>"Mi favorito es el café de Nicaragua. ¡Lo amo!"</p>
+          <h4>- Laura</h4>
+        </div>
+        <div class="reseña">
+          <p>"El sitio web es muy fácil de usar y los envíos rápidos."</p>
+          <h4>- Martín</h4>
+        </div>
+        <div class="reseña">
+          <p>
+            "Que sería de mi vida sin café y el mejor lugar para comprarlo es en
+            Coffee Journey."
+          </p>
+          <h4>- Isabella</h4>
+        </div>
+        <div class="reseña">
+          <p>
+            "El café de especialidad es un viaje de ida y Coffee Journey el
+            mejor acompañante"
+          </p>
+          <h4>- Martín</h4>
+        </div>
+      </div>
+    </section>
+    <section id="sucursales">
+      <h2>Sucursales</h2>
+      <p>Vení a visitarnos en nuestras sucursales:</p>
+      <ul>
+        <li>📍 Guatemala 4567, Palermo</li>
+        <li>📍 Av. Corrientes 3254, Almagro</li>
+      </ul>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.679974730215!2d-58.42484358483954!3d-34.614251280458886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8157d8cbd3%3A0x53b0fdd54b6763d4!2sAv.%20Corrientes%203254%2C%20C1193%20CABA!5e0!3m2!1ses!2sar!4v1634821467993!5m2!1ses!2sar"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+    <section id="contacto">
+      <h2 class="tituloContacto">Contacto</h2>
+      <form
+        action="https://formspree.io/f/xanogzgp"
+        method="POST"
+        class="formulario-contacto"
+      >
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Coffee Journey. Todos los derechos reservados.</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"
+            ><img src="icons/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="icons/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="icons/x-twitter.svg" alt="Twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
