@@ -1,10 +1,10 @@
-// Declaramos carrito y lo cargamos desde localStorage o creamos uno vacío
+// Declaramos carrito
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 // Contenedor donde se van a renderizar los productos
 const productosContainer = document.querySelector(".productos-container");
 
-// Contador del carrito (podés agregar un span en tu header para mostrarlo)
+// Contador del carrito
 const contadorCarrito = document.createElement("span");
 contadorCarrito.id = "contador-carrito";
 contadorCarrito.style.marginLeft = "10px";

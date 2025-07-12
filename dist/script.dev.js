@@ -6,10 +6,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// Declaramos carrito y lo cargamos desde localStorage o creamos uno vacío
+// Declaramos carrito
 var carrito = JSON.parse(localStorage.getItem("carrito")) || []; // Contenedor donde se van a renderizar los productos
 
-var productosContainer = document.querySelector(".productos-container"); // Contador del carrito (podés agregar un span en tu header para mostrarlo)
+var productosContainer = document.querySelector(".productos-container"); // Contador del carrito
 
 var contadorCarrito = document.createElement("span");
 contadorCarrito.id = "contador-carrito";
