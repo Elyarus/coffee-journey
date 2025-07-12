@@ -150,6 +150,43 @@ function agregarAlCarrito(producto) {
   mostrarCarrito();
   alert(`Agregaste "${producto.title}" al carrito.`);
 }
+// Seleccionamos el formulario
+const formulario = document.querySelector(".formulario-contacto");
+
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevenir envío automático para validar
+
+  const nombre = formulario.nombre.value.trim();
+  const email = formulario.email.value.trim();
+  const mensaje = formulario.mensaje.value.trim();
+
+  // Regex simple para validar email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  let errores = [];
+
+  if (nombre === "") {
+    errores.push("El nombre es obligatorio.");
+  }
+
+  if (email === "") {
+    errores.push("El correo electrónico es obligatorio.");
+  } else if (!emailRegex.test(email)) {
+    errores.push("El correo electrónico no tiene un formato válido.");
+  }
+
+  if (mensaje === "") {
+    errores.push("El mensaje es obligatorio.");
+  }
+
+  if (errores.length > 0) {
+    alert(errores.join("\n"));
+    return; // No enviar formulario
+  }
+
+  // Si pasa validación, enviar el formulario con Formspree
+  formulario.submit();
+});
 
 // Inicialización
 cargarProductos();
