@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Coffee Journey: el mejor café de especialidad para acompañar tu viaje.">
+    <meta name="keywords" content="café, especialidad, ecommerce, tienda de café, barista, Coffee Journey">
+    <meta name="author" content="Tu Nombre">
+
     <link rel="stylesheet" href="style.css" />
     <title>Coffee Journey</title>
     <link
@@ -16,7 +20,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="imagenes/coffee-journey.png"Logo de Coffee Journey">
+        <img src="imagenes/coffee-journey.png" alt="Logo de Coffee Journey" />
       </div>
 
       <nav>
@@ -26,20 +30,22 @@
           <li><a href="#recetas">Recetas</a></li>
           <li><a href="#sucursales">Sucursales</a></li>
           <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#carrito">Carrito</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="inicio" class="inicio">
+        <h1>Bienvenido a Coffee Journey</h1>
+        <h3>El mejor café para acompañar tu viaje.</h3>
+      </section>
 
-    <section id="inicio" class="inicio">
-      <h1>Bienvenido a Coffee Journey</h1>
-      <h3>El mejor café para acompañar tu viaje.</h3>
+      <section id="productos">
+        <h2>Nuestros Cafés</h2>
+    </main>
+      <div class="productos-container"></div>
     </section>
-
-    <section id="productos">
-      <h2>Nuestros Cafés</h2>
-
-      <div class="productos-container">
-        <div class="producto">
+    <!-- <div class="producto">
           <img src="imagenes/cafe-nicaragua.jpg" alt="Café Espresso" />
           <h3>Café Nicaragua</h3>
           <p>Precio: $2000</p>
@@ -63,8 +69,8 @@
             Agregar al carrito
           </button>
         </div>
-      </div>
-    </section>
+      </div> -->
+
     <section id="reseñas">
       <h2 class="tituloReseña">Reseña</h2>
       <div class="grid-reseñas">
@@ -140,6 +146,17 @@
       </form>
     </section>
 
+    <section
+      id="carrito"
+      class="carrito-section"
+      style="padding: 20px; background: #f7f1e1; margin: 20px"
+    >
+      <h2>Carrito de Compras</h2>
+      <div id="carrito-productos"></div>
+      <p id="carrito-total"></p>
+      <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+
     <footer>
       <div class="footer-content">
         <p>&copy; 2025 Coffee Journey. Todos los derechos reservados.</p>
@@ -157,6 +174,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

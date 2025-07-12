@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Café Colombia",
+    "price": 2200,
+    "image": "imagenes/cafe-colombia.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Café Nicaragua",
+    "price": 1900,
+    "image": "imagenes/cafe-nicaragua.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Café Etiopía",
+    "price": 2500,
+    "image": "imagenes/cafe-etiopia.jpg"
+  }
+]
